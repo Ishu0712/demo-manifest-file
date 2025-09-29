@@ -1,7 +1,9 @@
 apiVersion : v1
 kind : Pod 
 metadata: 
-  name : argocd-nginx
+  name : argocd-nginx-pod
+  labels: 
+    app.kubernetes.io/name : argocd-nginx
  # namespace : ishu-argocd-ns
 spec: 
   containers:
